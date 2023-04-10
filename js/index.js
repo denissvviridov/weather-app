@@ -1,62 +1,13 @@
 const input = document.querySelector('input')
 const btn = document.querySelector('.btn')
 
-document.addEventListener("DOMContentLoaded", function(){
-    helperOne();
 
-});
-
-function startHelper() {
-    let x = new Promise((resolve, reject) => {
-
-    })
+function updateTime() {
+    const now = new Date();
+    const time = now.toLocaleTimeString();
+    document.getElementById('clock').textContent = time;
 }
-
-
-function helperOne() {
-    let helperOne = document.createElement('div')
-    let helperOneOverlay = document.createElement('div')
-
-    helperOneOverlay.style.width = '100%'
-    helperOneOverlay.style.height = '100%'
-    helperOneOverlay.style.position = 'absolute'
-    helperOneOverlay.style.top = '0'
-    helperOneOverlay.style.left = '0'
-    helperOneOverlay.style.background = 'rgba(0,0,0,0.5)'
-    helperOneOverlay.style.transition = '2s'
-
-    let positionInputLeft = btn.offsetLeft
-    let positionInputTop = btn.offsetTop
-    btn.style.position = 'relative'
-    btn.style.zIndex = '200'
-    helperOne.style.width = '300px'
-    helperOne.style.height = '100px'
-    helperOne.style.position = 'absolute'
-    helperOne.style.top = `${positionInputTop + 100}px`
-    helperOne.style.left = `${positionInputLeft + 150}px`
-    helperOne.style.background = 'rgba(255,255,255,0.7)'
-    helperOne.style.zIndex = '200'
-    helperOne.style.display = 'flex'
-    helperOne.style.flexDirection = 'column'
-    helperOne.style.justifyContent = 'center'
-    helperOne.style.alignItems = 'center'
-    helperOne.innerHTML = 'Enter on key for search weather'
-
-    let nextBtn = document.createElement('button')
-    nextBtn.classList.add('next-btn')
-    nextBtn.innerHTML = 'Next'
-    helperOne.append(nextBtn)
-
-    helperOneOverlay.append(helperOne)
-    document.body.append(helperOneOverlay)
-
-    let eventToBtnNext = document.querySelector('.next-btn')
-    eventToBtnNext.addEventListener('click', function () {
-        helperOneOverlay.remove()
-    })
-}
-
-
+setInterval(updateTime, 1000);
 
 
 
@@ -64,10 +15,12 @@ function helperOne() {
 
 btn.addEventListener('click', getWeather)
 
+
 function getWeather() {
     let add = input.value
     let anim = document.querySelector('.animate__animated')
     anim.innerHTML = ''
+
 
     let xhr = new XMLHttpRequest()
     xhr.open('GET', `https://api.openweathermap.org/data/2.5/weather?q=${add}&appid=69ff08276d2b60c577844250876cd4b2`)
@@ -75,6 +28,8 @@ function getWeather() {
     xhr.onload = function () {
         let arr = JSON.parse(xhr.response)
         let idIcon = arr.weather[0].icon
+
+        console.log(arr)
 
         function addIcon() {
 
@@ -110,10 +65,11 @@ function getWeather() {
             let info3 = document.querySelector('.inf-3')
             let feelsLike = Math.trunc(arr.main.feels_like - 273.15)
             let humidity = Math.trunc(arr.main.humidity)
+            let pressure = Math.trunc(arr.main.pressure)
 
             info1.innerHTML = `Feels like: ${feelsLike}℃`
             info2.innerHTML = `Humidity: ${humidity}%`
-            info3.innerHTML = `Humidity: ${humidity}%`
+            info3.innerHTML = `Pressure: ${pressure}mbar`
 
             console.log(arr.main)
         }
@@ -240,6 +196,7 @@ function getWeather() {
     val.value = ''
 
     xhr.send()
+
 
 }
 

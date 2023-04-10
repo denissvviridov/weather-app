@@ -88,10 +88,10 @@ section {
       display: flex;
       justify-content: center;
       align-items: center;
-      gap: 50px;
+      gap: 30px;
 
       div {
-        width: 165px;
+        width: max-content;
         height: 10px;
         color: rgba(255, 255, 255, 0.7);
         font-size: 20px;
@@ -112,6 +112,7 @@ section {
       align-items: center;
       gap: 30px;
       width: 100%;
+      padding-top: 20px;
 
       .map-block {
         width: 100%;
@@ -134,6 +135,14 @@ section {
 
       }
 
+    }
+  }
+  .time{
+    #clock{
+      background: rgba(0,0,0,0.5);
+      padding: 15px;
+      color: rgba(255, 255, 255, 0.8);
+      font-size: 30px;
     }
   }
 }
