@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f52d19a5-3111-45cf-8f84-875d61bd3b79" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="ProjectId" id="2O1gLBI9TUio5lmDPjipmBZrtfL" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Денис\Desktop\weather-app-test\scss" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f52d19a5-3111-45cf-8f84-875d61bd3b79" name="Default Changelist" comment="" />
+      <created>1680733444279</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1680733444279</updated>
+      <workItem from="1680733445439" duration="494000" />
+      <workItem from="1680733960084" duration="1793000" />
+      <workItem from="1680735788154" duration="1553000" />
+      <workItem from="1680737595863" duration="1726000" />
+      <workItem from="1680768760533" duration="1965000" />
+      <workItem from="1680770763171" duration="1973000" />
+      <workItem from="1680775515902" duration="1780000" />
+      <workItem from="1680777339393" duration="541000" />
+      <workItem from="1680818032792" duration="1802000" />
+      <workItem from="1680819870344" duration="2409000" />
+      <workItem from="1680822633228" duration="1779000" />
+      <workItem from="1680824443604" duration="1816000" />
+      <workItem from="1680826299093" duration="1236000" />
+      <workItem from="1680853116092" duration="1608000" />
+      <workItem from="1680855133970" duration="2265000" />
+      <workItem from="1680857455394" duration="1794000" />
+      <workItem from="1680859327076" duration="906000" />
+      <workItem from="1680862133664" duration="1781000" />
+      <workItem from="1680863948265" duration="1005000" />
+      <workItem from="1680865820309" duration="1779000" />
+      <workItem from="1680867633975" duration="1757000" />
+      <workItem from="1680869815570" duration="635000" />
+      <workItem from="1680879669028" duration="993000" />
+      <workItem from="1680898410288" duration="594000" />
+      <workItem from="1680909522421" duration="3707000" />
+      <workItem from="1681023006220" duration="1186000" />
+      <workItem from="1681080902051" duration="3129000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="875" y="171" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1680734228757">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state x="875" y="171" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.816@0.0.1536.816" timestamp="1680734228757" />
+    <state x="720" y="110" key="EditFileWatcherDialog" timestamp="1680734173730">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state x="720" y="110" key="EditFileWatcherDialog/0.0.1536.816@0.0.1536.816" timestamp="1680734173730" />
+    <state x="431" y="137" width="672" height="678" key="search.everywhere.popup" timestamp="1680777006665">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state x="431" y="137" width="672" height="678" key="search.everywhere.popup/0.0.1536.816@0.0.1536.816" timestamp="1680777006665" />
+  </component>
+</project>

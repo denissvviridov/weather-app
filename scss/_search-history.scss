@@ -1,0 +1,49 @@
+.history{
+  width: 900px;
+  height: 60px;
+  display: flex;
+  background: rgba(0, 0, 0, 0.5);
+
+  .title-history{
+    padding: 15px;
+    h3{
+      font-size: 20px;
+      color: rgba(255, 255, 255, 0.7);
+      font-weight: 100;
+    }
+  }
+
+  .text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    li{
+      background: rgba(0, 0, 0, 0.5);
+      color: rgba(255, 255, 255, 0.5);
+      list-style-type: none;
+      font-size: 20px;
+      padding: 8px;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 5px;
+      .item{
+        cursor: pointer;
+      }
+      .item:hover{
+        transition: .3s;
+        color: white;
+      }
+
+      .close{
+        font-size: 15px;
+        cursor: pointer;
+      }
+      .close:hover{
+        color: white;
+      }
+    }
+  }
+}

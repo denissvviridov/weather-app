@@ -1,0 +1,198 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  background: url("../../image/main1.jpg") center/cover;
+}
+
+section {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+section .weather-block {
+  width: 900px;
+  height: 630px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+section .weather-block .search-block {
+  width: 600px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+section .weather-block .search-block input {
+  width: 400px;
+  height: 100%;
+  font-size: 25px;
+  background: rgba(0, 0, 0, 0.4);
+  transition: 0.3s;
+  color: white;
+  border: none;
+}
+section .weather-block .search-block .btn {
+  width: 200px;
+  height: 100%;
+  font-size: 20px;
+  box-shadow: 0 0 5px black;
+  cursor: pointer;
+  background: cadetblue;
+  border: none;
+}
+section .weather-block .search-block .btn:hover {
+  transition: 0.3s;
+  background: #1b6162;
+  color: white;
+}
+section .weather-block .gif-block {
+  width: 100%;
+  height: 630px;
+  border-radius: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -10;
+}
+section .weather-block .gif-block img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  opacity: 0.5;
+}
+section .weather-block .animate__animated {
+  font-size: 40px;
+  color: rgba(241, 241, 241, 0.5);
+}
+section .weather-block .terms {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 30px;
+}
+section .weather-block .more-information {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+section .weather-block .more-information div {
+  width: 165px;
+  height: 10px;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 15px;
+}
+section .weather-block .wrap-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  width: 100%;
+}
+section .weather-block .wrap-content .map-block {
+  width: 100%;
+  height: 250px;
+  border-radius: 30px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+section .weather-block .wrap-content .map-block #map {
+  height: 100%;
+}
+section .weather-block .wrap-content .map-block html,
+section .weather-block .wrap-content .map-block body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.information-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.information-block h1 {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 140px;
+}
+.information-block .block-icon {
+  width: 100px;
+  height: 100px;
+}
+.information-block .block-icon img {
+  width: 100%;
+  height: auto;
+  font-size: 50px;
+}
+.information-block .name {
+  font-size: 30px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.history {
+  width: 900px;
+  height: 60px;
+  display: flex;
+  background: rgba(0, 0, 0, 0.5);
+}
+.history .title-history {
+  padding: 15px;
+}
+.history .title-history h3 {
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: 100;
+}
+.history .text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.history .text li {
+  background: rgba(0, 0, 0, 0.5);
+  color: rgba(255, 255, 255, 0.5);
+  list-style-type: none;
+  font-size: 20px;
+  padding: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.history .text li .item {
+  cursor: pointer;
+}
+.history .text li .item:hover {
+  transition: 0.3s;
+  color: white;
+}
+.history .text li .close {
+  font-size: 15px;
+  cursor: pointer;
+}
+.history .text li .close:hover {
+  color: white;
+}
+
+/*# sourceMappingURL=stylesheet.css.map */

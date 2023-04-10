@@ -1,0 +1,139 @@
+section {
+  width: 100%;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+
+  .weather-block {
+    width: 900px;
+    height: 630px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+
+    .search-block {
+      width: 600px;
+      height: 60px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 20px;
+
+      input {
+        width: 400px;
+        height: 100%;
+        font-size: 25px;
+
+        background: rgba(0, 0, 0, 0.4);
+        transition: .3s;
+        color: white;
+        border: none;
+
+      }
+
+      .btn {
+        width: 200px;
+        height: 100%;
+        font-size: 20px;
+        box-shadow: 0 0 5px black;
+
+        cursor: pointer;
+        background: cadetblue;
+        border: none;
+      }
+
+      .btn:hover {
+        transition: .3s;
+        background: #1b6162;
+        color: white;
+      }
+    }
+
+    .gif-block {
+      width: 100%;
+      height: 630px;
+      border-radius: 10px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -10;
+
+      img {
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        opacity: 0.5;
+      }
+    }
+
+    .animate__animated {
+      font-size: 40px;
+      color: rgba(241, 241, 241, 0.5);
+    }
+
+    .terms {
+      color: rgba(255, 255, 255, 0.9);
+      font-size: 30px;
+    }
+
+    .more-information {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 50px;
+
+      div {
+        width: 165px;
+        height: 10px;
+        color: rgba(255, 255, 255, 0.7);
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: rgba(0,0,0,0.5);
+        padding: 15px;
+
+      }
+    }
+
+
+    .wrap-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      gap: 30px;
+      width: 100%;
+
+      .map-block {
+        width: 100%;
+        height: 250px;
+        border-radius: 30px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+
+        #map {
+          height: 100%;
+        }
+
+        html,
+        body {
+          height: 100%;
+          margin: 0;
+          padding: 0;
+        }
+
+      }
+
+    }
+  }
+}

@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="scss/css/stylesheet.css">
+</head>
+<body>
+
+<section>
+
+    <div class="weather-block">
+        <div class="search-block">
+            <input type="text">
+            <button type="submit" class="btn">Search</button>
+        </div>
+
+        <div class="animate__animated animate__bounceInLeft">Enter your country or city</div>
+
+        <div class="information-block">
+            <div class="name"></div>
+            <div class="title"><h1></h1></div>
+            <div class="block-icon"></div>
+        </div>
+        <div class="terms"></div>
+        <div class="gif-block"></div>
+
+      <div class="wrap-content">
+          <div class="more-information">
+              <div class="inf-1"></div>
+              <div class="inf-2"></div>
+              <div class="inf-3"></div>
+          </div>
+
+          <div class="map-block">
+              <div id="map"></div>
+          </div>
+      </div>
+
+    </div>
+
+    <div class="history">
+        <div class="title-history">
+            <h3> Search history: </h3>
+        </div>
+        <ul class="text"></ul>
+    </div>
+
+
+</section>
+
+<script>(g => {
+    var h, a, k, p = "The Google Maps JavaScript API", c = "google", l = "importLibrary", q = "__ib__", m = document,
+        b = window;
+    b = b[c] || (b[c] = {});
+    var d = b.maps || (b.maps = {}), r = new Set, e = new URLSearchParams,
+        u = () => h || (h = new Promise(async (f, n) => {
+            await (a = m.createElement("script"));
+            e.set("libraries", [...r] + "");
+            for (k in g) e.set(k.replace(/[A-Z]/g, t => "_" + t[0].toLowerCase()), g[k]);
+            e.set("callback", c + ".maps." + q);
+            a.src = `https://maps.${c}apis.com/maps/api/js?` + e;
+            d[q] = f;
+            a.onerror = () => h = n(Error(p + " could not load."));
+            a.nonce = m.querySelector("script[nonce]")?.nonce || "";
+            m.head.append(a)
+        }));
+    d[l] ? console.warn(p + " only loads once. Ignoring:", g) : d[l] = (f, ...n) => r.add(f) && u().then(() => d[l](f, ...n))
+})
+({key: "AIzaSyAAZD5yhjC4QL6v9aREt5CgrMvOIdCguvU", v: "weekly"});</script>
+<script src="js/index.js"></script>
+</body>
+</html>
